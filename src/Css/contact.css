@@ -1,0 +1,96 @@
+/*Contact*/
+#contact{
+    background-color: #fff;
+    padding: 100px 0;
+  }
+  
+  .my-form{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(58,78,95,0.2) 0 10px 16px, rgba(58,78,95,0.05) 0 -5px 16px;
+  }
+  
+  .input-form{
+    margin-bottom: 35px;
+    padding: 0;
+  }
+  
+  .input-form input{ 
+    border: none;
+    border-bottom: 2px solid #a2a2a2; 
+  }
+  
+  .input-form input:focus{ 
+    outline: none !important;
+    border-color: #f34236;
+  }
+  
+  .form-text-area{
+    width: 100%;
+    border-width: 2px;
+  }
+  
+  .form-text-area:focus{
+    outline: none !important;
+    border-color: #f34236;
+  }
+  .form-btn{
+    text-align: center;
+  }
+  
+  .btn-send-message{
+    font-weight: 600;
+    line-height: 40px;
+    padding: 0 30px;
+    font-size: 14px;
+    display: inline-block;
+    color: #fff;
+    background-color: #f34236;
+    text-align: center;
+    border: none;
+    letter-spacing: 1px;
+    border-radius: 100px;
+    text-transform: uppercase;
+  }
+  
+  .contact-info{
+    background-color: #fff;
+    position: relative;
+    padding: 10px 10px 10px 20px;
+    border-radius: 10px;
+    box-shadow: rgba(58,78,95,0.2) 0 10px 16px, rgba(58,78,95,0.05) 0 -5px 16px;
+    margin-bottom: 35px;
+  }
+  
+  .contact-info i{
+    position: absolute;
+    top:20px;
+    left: 20px;
+    background-color: #000;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 50%;
+  }
+  
+  .contact-info h4{
+    margin: 0 0 0 80px;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  
+  .contact-info p{
+    margin: 0 0 0 80px;
+    font-size: 15px;
+  }
+
+  @media screen and (max-width: 991px){
+    .input-form input{
+      width: 100%;
+    }
+  }
+  

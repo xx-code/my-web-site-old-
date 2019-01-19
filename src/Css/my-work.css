@@ -1,0 +1,84 @@
+#my_work{
+    background-color: #fff;
+    padding: 100px 0;
+  }
+  
+  .frame-work{
+    width: 33%;
+  }
+  
+  .frame-content{
+    padding: 10px;
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: rgba(58,78,95,0.2) 0 10px 16px, rgba(58,78,95,0.05) 0 -5px 16px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .above-info{
+    visibility: hidden;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+  }
+  
+  .above-info h4{
+    margin: 0;
+    padding: 0 0 10px;
+    font-weight: 600;
+    color: #fff;
+  }
+  
+  .above-info label{
+    font-weight: 300;
+    padding: 0 10px;
+    font-size: 14px;
+    display: inline-block;
+    color: #fff;
+    background-color: #f34236;
+    text-align: center;
+    letter-spacing: 1px;
+    border-radius: 100px;
+  }
+  
+  .frame-content:hover .above-info {
+    visibility: visible;
+  }
+  
+  .frame-content img{
+    max-width: 100%;
+  }
+  
+  /*Quote*/
+  #quote{
+    padding: 100px 0;
+    background-color: #f3f3f3;
+  }
+  
+  .img-quote{
+   text-align: center;
+   margin-bottom: 30px;
+  }
+  
+  .img-quote img{
+    width: 100px;
+    height: 100px; 
+    border-radius: 50%;
+  }
+  
+  .quote-text{
+    text-align: center;
+  }
+  .quote-text h4{
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.1;
+  }

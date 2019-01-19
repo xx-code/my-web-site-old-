@@ -1,0 +1,41 @@
+footer{
+    background-color: #121212;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .subTitle-footer{
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  .subTitle-footer .social-link{
+    display: flex;
+    justify-content: center;
+  } 
+  
+  .subTitle-footer h4{
+    color: #fff;
+    padding: 0 0 20px;
+    font-weight: 300;
+    font-size: 22px;
+    text-transform:uppercase; 
+  }
+  
+  .copy-right{
+    text-align: center;
+  }
+  
+  .copy-right p{
+    background-color: #171717;
+    color: #999;
+    padding: 25px 0;
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  @media screen and (max-width: 991px){
+    .contact-info{
+      margin-top: 35px;
+    }
+  }
