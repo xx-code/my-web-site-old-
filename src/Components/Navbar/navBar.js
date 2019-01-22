@@ -89,22 +89,46 @@ export default class NavBar extends Component{
                 
                 <ul className = "header-nav" id = "nav">
                     <li id = "homeTarget">
-                        <a href = "#home" onClick = {() => this.activeElement("homeTarget")}>HOME</a>
+                        <a 
+                            href = "#home" 
+                            onClick = {() => this.activeElement("homeTarget")}>
+                            HOME
+                        </a>
                     </li>
                     <li id = "aboutTarget">
-                        <a href = "#about" onClick = {() => this.activeElement("aboutTarget")}>ABOUT</a>
+                        <a 
+                            href = "#about" 
+                            onClick = {() => this.activeElement("aboutTarget")}>
+                            ABOUT
+                        </a>
                     </li>
                     <li id = "serviceTarget">
-                        <a href = "#service" onClick = {() => this.activeElement("serviceTarget")}>SERVICE</a>
+                        <a 
+                            href = "#service" 
+                            onClick = {() => this.activeElement("serviceTarget")}>
+                            SERVICE
+                        </a>
                     </li>
                     <li id = "resumeTarget">
-                        <a href = "#resume" onClick = {() => this.activeElement("resumeTarget")}>RESUME</a>
+                        <a 
+                            href = "#resume" 
+                            onClick = {() => this.activeElement("resumeTarget")}>
+                            RESUME
+                        </a>
                     </li>
                     <li id = "workTarget">
-                        <a href = "#my_work" onClick = {() => this.activeElement("workTarget")}>MY WORK</a>
+                        <a 
+                            href = "#my_work" 
+                            onClick = {() => this.activeElement("workTarget")}>
+                            MY WORK
+                        </a>
                     </li>
                     <li id = "contactTarget">
-                        <a href = "#contact" onClick = {() => this.activeElement("contactTarget")}>CONTACT</a>
+                        <a 
+                            href = "#contact" 
+                            onClick = {() => this.activeElement("contactTarget")}>
+                            CONTACT
+                        </a>
                     </li>
                 </ul>                                                                     
             </div>

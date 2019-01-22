@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import NavBar from '../Navbar/navBar';
-import Background from './background';
+import NavBar from '../Navbar/NavBar';
+import Background from './Background';
 import '../../Css/home.css';
 
 export default class Home extends Component{
@@ -47,10 +47,15 @@ export default class Home extends Component{
                 height} = this.state;
         return(
             <React.Fragment>
-                <Background imgHeight = {imgHeight} width = {width} 
-                    height = {height} imgWidth = {imgWidth}
-                    top = {topImg} left = {leftImg}/> 
-                <NavBar/>
+                <Background 
+                    imgHeight = {imgHeight} 
+                    width = {width} 
+                    height = {height} 
+                    imgWidth = {imgWidth}
+                    top = {topImg} 
+                    left = {leftImg}
+                /> 
+                <NavBar />
                 <section id = "home" style = {{height: imgHeight}}>
                     <div className = "container container-perso">  
                         <div className = "home-text">

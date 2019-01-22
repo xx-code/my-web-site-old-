@@ -13,7 +13,7 @@ class About extends Component{
     }
 
     componentDidMount(){
-        this.getProfile()
+        this.getProfile();
     }
 
     getProfile = () => {
@@ -37,11 +37,17 @@ class About extends Component{
                         {
                             profile === "" ? (
                                 <div className = "frame">
-                                     <img alt = "me" className = "profile img-fluid" src = {loading} />
+                                     <img 
+                                        alt = "me" 
+                                        className = "profile img-fluid" 
+                                        src = {loading} />
                                 </div>
                             ):(
                                 <div className = "frame">
-                                    <img alt = "me" className = "profile img-fluid" src = {profile} />
+                                    <img 
+                                        alt = "me" 
+                                        className = "profile img-fluid" 
+                                        src = {profile} />
                                 </div>
                             )
                         }
@@ -57,17 +63,26 @@ class About extends Component{
                         <div className = "social-link">
                             <ul>
                                 <li>
-                                    <a href = "https://www.instagram.com/roinujetsugua_sama/" rel="noopener noreferrer" target = "_blank">
+                                    <a 
+                                        href = "https://www.instagram.com/roinujetsugua_sama/" 
+                                        rel="noopener noreferrer" 
+                                        target = "_blank">
                                         <i className="fab fa-instagram"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href = "https://www.pinterest.fr/akaaugustejunior/" rel="noopener noreferrer" target = "_blank">
+                                    <a 
+                                        href = "https://www.pinterest.fr/akaaugustejunior/" 
+                                        rel="noopener noreferrer" 
+                                        target = "_blank">
                                         <i className="fab fa-pinterest"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href = "https://www.linkedin.com/in/junior-tiemle-324701160/" rel="noopener noreferrer" target = "_blank">
+                                    <a 
+                                        href = "https://www.linkedin.com/in/junior-tiemle-324701160/" 
+                                        rel="noopener noreferrer"
+                                        target = "_blank">
                                         <i className="fab fa-linkedin-in"></i>
                                     </a>
                                 </li>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ResumeBox from './box-resume';
+import ResumeBox from './BoxResume';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { firestoreConnect, isEmpty, isLoaded } from 'react-redux-firebase';

@@ -10,17 +10,26 @@ export default class Footer extends Component{
                     <div className = "social-link">
                             <ul>
                                 <li>
-                                    <a href = "https://www.instagram.com/roinujetsugua_sama/" rel="noopener noreferrer"  target = "_blank">
+                                    <a 
+                                        href = "https://www.instagram.com/roinujetsugua_sama/" 
+                                        rel="noopener noreferrer"  
+                                        target = "_blank">
                                         <i className="fab fa-instagram"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href = "https://www.pinterest.fr/akaaugustejunior/" rel="noopener noreferrer"  target = "_blank">
+                                    <a 
+                                        href = "https://www.pinterest.fr/akaaugustejunior/" 
+                                        rel="noopener noreferrer"  
+                                        target = "_blank">
                                         <i className="fab fa-pinterest"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href = "https://www.linkedin.com/in/junior-tiemle-324701160/" rel="noopener noreferrer"  target = "_blank">
+                                    <a 
+                                        href = "https://www.linkedin.com/in/junior-tiemle-324701160/" 
+                                        rel="noopener noreferrer"  
+                                        target = "_blank">
                                         <i className="fab fa-linkedin-in"></i>
                                     </a>
                                 </li>
