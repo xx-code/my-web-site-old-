@@ -9,6 +9,7 @@ import Work from './Components/MyWork/Work';
 import Quotes from './Components/MyWork/Quotes';
 import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
+import Radium from 'radium';
 import { Provider } from 'react-redux';
 import {store, rrfProps} from './store';
 import { ReactReduxFirebaseProvider } from 'react-redux-firebase';
@@ -18,15 +19,17 @@ class App extends Component {
     return (
       <Provider store = {store}>
           <ReactReduxFirebaseProvider {...rrfProps}>
-            <Home/>
-            <About/>
-            <Service/>
-            <Resume/>
-            <CallMe/>
-            <Work/>
-            <Quotes/>
-            <Contact/>
-            <Footer/>
+            <Radium.StyleRoot>
+              <Home/>
+              <About/>
+              <Service/>
+              <Resume/>
+              <CallMe/>
+              <Work/>
+              <Quotes/>
+              <Contact/>
+              <Footer/>
+            </Radium.StyleRoot>
           </ReactReduxFirebaseProvider>            
       </Provider>
     );
