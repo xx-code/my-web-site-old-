@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import Home from './Components/Home/Home';
+//import Home from './Components/Home/Home'
+import Home from './container/Home/index';
 import About from './Components/About/About';
 import Service from './Components/MyService/Services';
 import Resume from './Components/Resume/Resume';
@@ -20,15 +21,15 @@ class App extends Component {
       <Provider store = {store}>
           <ReactReduxFirebaseProvider {...rrfProps}>
             <Radium.StyleRoot>
-              <Home/>
-              <About/>
-              <Service/>
-              <Resume/>
-              <CallMe/>
-              <Work/>
-              <Quotes/>
-              <Contact/>
-              <Footer/>
+              <Home />
+              <About />
+              <Service />
+              <Resume />
+              <CallMe />
+              <Work />
+              <Quotes />
+              <Contact />
+              <Footer />
             </Radium.StyleRoot>
           </ReactReduxFirebaseProvider>            
       </Provider>

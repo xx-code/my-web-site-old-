@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import styles from '../Styles/NavBar';
-import Logo from '../Components/Logo/Logo';
-import NavLink from '../Components/NavLink/NavLink';
-import { linkValue } from '../utils/StaticData';
+import styles from './styles';
+import Logo from '../../common/Logo/index';
+import NavLink from './components/NavLink/index';
+import { linkValue } from '../../utils/StaticData';
 import Radium from 'radium';
 
 class NavBar extends Component{
@@ -89,7 +89,8 @@ class NavBar extends Component{
 
     render(){
 
-        const {navValue, isScroll} = this.state;
+        const { navValue, 
+                isScroll } = this.state;
 
         return(
             <div 

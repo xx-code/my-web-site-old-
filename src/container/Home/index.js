@@ -1,9 +1,11 @@
-import React, { Component } from 'react';
-import NavBar from '../../Layout/Navbar/index';
-import Background from './Background';
-import '../../Css/home.css';
+import React, {Component} from 'react';
+import styles from './styles';
+import NavBar from '../../layout/Navbar/index';
+import Radium from 'radium';
+import Background from './components/Background/index';
+import { Button } from '../../common/Buttons/index';
 
-export default class Home extends Component{
+class Home extends Component {
     constructor(props){
         super(props)
         this.state = {
@@ -27,17 +29,14 @@ export default class Home extends Component{
         let height = currentHeight;
         let width = currentWidth;
         
-
-        this.setState(prevState => {
-            return({
-                imgWidth: currentWidth, 
-                imgHeight: currentHeight,
-                height: height,
-                width: width
-            })
+        this.setState({
+            imgWidth: currentWidth, 
+            imgHeight: currentHeight,
+            height: height,
+            width: width
         })
     }
-
+    
     render(){
         const { imgWidth, 
                 imgHeight, 
@@ -45,6 +44,7 @@ export default class Home extends Component{
                 leftImg, 
                 width, 
                 height} = this.state;
+
         return(
             <React.Fragment>
                 <Background 
@@ -56,14 +56,17 @@ export default class Home extends Component{
                     left = {leftImg}
                 /> 
                 <NavBar />
-                <section id = "home" style = {{height: imgHeight}}>
-                    <div className = "container container-perso">  
-                        <div className = "home-text">
-                            <h3>Hello! i'm</h3>
-                            <h2>Auguste Tiemele</h2>
-                            <p>WEB DEVELOPMENT | DIGITAL MARKETING | MOBILE APPS</p>
-                            <div className = "wt-action">
-                                <button className = "btn-lettalk">LET'S TALK NEW</button>
+                <section id = "home" 
+                        style = {{ ...styles.home, 
+                                    height: imgHeight }}>
+                    <div className = "container" 
+                        style = {styles.containerPerso}>  
+                        <div>
+                            <h3 style = {styles.homeTextH3}>Hello! i'm</h3>
+                            <h2 style = {styles.homeTextH2}>Auguste Tiemele</h2>
+                            <p style = {styles.homeTextP}>WEB DEVELOPMENT | DIGITAL MARKETING | MOBILE APPS</p>
+                            <div style = {styles.wtAction}>
+                                <Button title = "LET'S TALK NEW" />
                             </div>
                         </div>
                     </div>
@@ -72,3 +75,5 @@ export default class Home extends Component{
         )
     }
 }
+
+export default Radium(Home)

@@ -1,8 +1,7 @@
-import { WHITE } from "../Config/Color";
-
+import { WHITE } from '../../config/Color';
 export default {
     header:{
-        background: 'transparence',
+        background: 'transparent',
         padding: '15px 0px 15px 0px',
         display: 'flex',
         justifyContent: 'space-around',
