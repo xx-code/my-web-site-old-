@@ -1,5 +1,5 @@
-import Button from './Button';
+import PrimaryButton from './Button';
 
 export {
-    Button,
+    PrimaryButton,
 }

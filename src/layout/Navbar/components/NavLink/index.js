@@ -1,4 +1,5 @@
 import React from 'react';
+// style
 import Radium from 'radium';
 import style from './style';
 

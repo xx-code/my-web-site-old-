@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
-import styles from './styles';
+// image
 import Logo from '../../common/Logo/index';
+// components
 import NavLink from './components/NavLink/index';
+// date & firebase
 import { linkValue } from '../../utils/StaticData';
+// style
+import styles from './styles';
 import Radium from 'radium';
 
 class NavBar extends Component{

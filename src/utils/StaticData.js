@@ -43,6 +43,25 @@ const linkValue = [
     }
 ]
 
+const socialLinks = [
+    {
+        id : 0,
+        href : 'https://www.instagram.com/roinujetsugua_sama/',
+        icon : 'fa-instagram'
+    },
+    {
+        id : 1,
+        href : 'https://www.pinterest.fr/akaaugustejunior/',
+        icon : 'fa-pinterest'
+    },
+    {
+        id : 2,
+        href : 'https://www.linkedin.com/in/junior-tiemle-324701160/',
+        icon : 'fa-linkedin-in'
+    }
+]
+
 export {
-    linkValue
+    linkValue,
+    socialLinks
 }

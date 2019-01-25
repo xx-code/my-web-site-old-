@@ -1,9 +1,13 @@
 import React, {Component} from 'react';
-import styles from './styles';
-import NavBar from '../../layout/Navbar/index';
-import Radium from 'radium';
+// Components
+import Title from './components/Title/index';
 import Background from './components/Background/index';
-import { Button } from '../../common/Buttons/index';
+import { PrimaryButton } from '../../common/Buttons/index';
+// Layout
+import NavBar from '../../layout/Navbar/index';
+// styles
+import styles from './styles';
+import Radium from 'radium';
 
 class Home extends Component {
     constructor(props){
@@ -62,11 +66,9 @@ class Home extends Component {
                     <div className = "container" 
                         style = {styles.containerPerso}>  
                         <div>
-                            <h3 style = {styles.homeTextH3}>Hello! i'm</h3>
-                            <h2 style = {styles.homeTextH2}>Auguste Tiemele</h2>
-                            <p style = {styles.homeTextP}>WEB DEVELOPMENT | DIGITAL MARKETING | MOBILE APPS</p>
+                            <Title />
                             <div style = {styles.wtAction}>
-                                <Button title = "LET'S TALK NEW" />
+                                <PrimaryButton title = "LET'S TALK NEW" />
                             </div>
                         </div>
                     </div>
