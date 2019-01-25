@@ -12,6 +12,6 @@ export default {
     profile : {
         width: '500px',
         height: 'auto',
-        maxHeight: '500px'
+        maxHeight: '400px'
     }
 }

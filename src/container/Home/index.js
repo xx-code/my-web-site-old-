@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 // Components
-import Title from './components/Title/index';
-import Background from './components/Background/index';
-import { PrimaryButton } from '../../common/Buttons/index';
+import Title from './components/Title';
+import Background from './components/Background';
+import { PrimaryButton } from '../../common/Buttons';
 // Layout
-import NavBar from '../../layout/Navbar/index';
+import NavBar from '../../layout/Navbar';
 // styles
 import styles from './styles';
 import Radium from 'radium';
@@ -65,7 +65,7 @@ class Home extends Component {
                                     height: imgHeight }}>
                     <div className = "container" 
                         style = {styles.containerPerso}>  
-                        <div>
+                        <div style = {styles.textAbout}>
                             <Title />
                             <div style = {styles.wtAction}>
                                 <PrimaryButton title = "LET'S TALK NEW" />

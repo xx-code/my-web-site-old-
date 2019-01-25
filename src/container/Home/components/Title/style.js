@@ -1,4 +1,4 @@
-import { WHITE } from '../../config/Color';
+import { WHITE } from '../../../../config/Color';
 
 export default {
     homeTextH3 : {

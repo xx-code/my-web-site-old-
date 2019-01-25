@@ -11,6 +11,6 @@ export default {
     },
     wtAction : {
         display: 'flex',
-        justifyContent: 'center'
+        justifyContent: 'center',
     }
 }

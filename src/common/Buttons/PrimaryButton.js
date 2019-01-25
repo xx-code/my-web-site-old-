@@ -11,7 +11,7 @@ const Button = props => {
 
     return(
         <button 
-            style = {{...style.btnLettalk, styleOptions}}
+            style = {[style.btnLettalk, styleOptions]}
             onClick = {onClick}>
             {title}
         </button>

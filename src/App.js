@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 //import Home from './Components/Home/Home'
-import Home from './container/Home/index';
-import About from './Components/About/About';
+import Home from './container/Home';
+import About from './container/About';
 import Service from './Components/MyService/Services';
 import Resume from './Components/Resume/Resume';
 import CallMe from './Components/Resume/CallMe';

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 // image
-import Logo from '../../common/Logo/index';
+import Logo from '../../common/Logo';
 // components
-import NavLink from './components/NavLink/index';
+import NavLink from './components/NavLink';
 // date & firebase
 import { linkValue } from '../../utils/StaticData';
 // style

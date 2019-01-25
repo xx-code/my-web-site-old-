@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 import loading from '../../Images/loading.svg';
 // components 
 import ProfileInfo from './components/ProfileInfo';
-import ProfilePicture from './components/ProfilePicture/index';
-import { PrimaryButton } from '../../common/Buttons/index';
-import { SocialLinkList } from '../../common/SocialLink/index';
+import ProfilePicture from './components/ProfilePicture';
+import { PrimaryButton } from '../../common/Buttons';
+import { SocialLinkList } from '../../common/SocialLink';
 // data & firebase
 import { firebaseConnect } from 'react-redux-firebase';
 import { socialLinks } from '../../utils/StaticData';
@@ -56,7 +56,7 @@ class About extends Component{
 
         const {profile} = this.state;
 
-        profileContent = verifyStateProfile(profile);
+        let profileContent = this.verifyStateProfile(profile);
 
         return(
             <section 

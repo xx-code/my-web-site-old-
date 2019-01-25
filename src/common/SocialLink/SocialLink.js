@@ -1,7 +1,7 @@
 import React from 'react';
 // style
 import style from './style';
-import Radium from 'raduim';
+import Radium from 'radium';
 
 const SocialLink = props => {
 
