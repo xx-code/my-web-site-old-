@@ -1,8 +1,8 @@
-#resume{
+/*#resume{
     background-color: #fff;
     position: relative;
     padding: 100px 0;
-  }
+}*/
   
   .resume-frame{
   }
@@ -46,10 +46,10 @@
   }
 
   /*work together*/
-  #callme{
+  /*#callme{
     background-color: #f34236;
     padding: 60px 0;
-  }
+  }*/
   
   .callme-box{
     text-align: center;
