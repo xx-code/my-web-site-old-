@@ -6,14 +6,15 @@ import About from './container/About';
 import Service from './container/Service';
 import Resume from './container/Resume';
 import CallMe from './container/Resume/components/CallMe';
-import Work from './Components/MyWork/Work';
-import Quotes from './Components/MyWork/Quotes';
+import Work from './container/Project';
+import Quotes from './container/Project/components/Quotes';
 import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
 import Radium from 'radium';
 import { Provider } from 'react-redux';
 import {store, rrfProps} from './store';
 import { ReactReduxFirebaseProvider } from 'react-redux-firebase';
+import { quotes } from './utils/StaticData';
 
 class App extends Component {
   render() {
@@ -27,7 +28,7 @@ class App extends Component {
               <Resume />
               <CallMe />
               <Work />
-              <Quotes />
+              <Quotes quotes = {quotes}/>
               <Contact />
               <Footer />
             </Radium.StyleRoot>

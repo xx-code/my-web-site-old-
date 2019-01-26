@@ -1,3 +1,7 @@
+import voltaire from '../Images/voltaire.jpg';
+import socrate from '../Images/Socrate.jpg';
+import martin from '../Images/martin.jpg';
+
 const linkValue = [
     {
         id : 'homeTarget',
@@ -83,10 +87,32 @@ const services = [
     }
 ]
 
+const quotes = [
+    {
+        id : 0,
+        img : voltaire,
+        text : "Le travail éloigne de nous trois grands maux : l'ennui, le vice et le besoin.",
+        author : 'Voltaire'
+    },
+    {
+        id : 1,
+        img : socrate,
+        text : "Il n'y a point de travail honteux.",
+        author : 'Socrate'
+    },
+    {
+        id : 3,
+        img : martin,
+        text : "Un homme devrait faire son travail si parfaitement que les vivants, les morts, et ceux encore à naître ne puissent faire mieux.",
+        author : 'Martin Luther King'
+    }
+]
+
 
 
 export {
     linkValue,
     socialLinks,
-    services
+    services,
+    quotes
 }

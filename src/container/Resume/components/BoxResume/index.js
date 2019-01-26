@@ -1,7 +1,7 @@
 import React from 'react';
 // component
 import RowResume from './RowResume';
-import loading from '../../../../Images/loading.svg'
+import { MainLoad } from '../../../../common/Loading';
 // style
 import style from './style';
 import Radium from 'radium';
@@ -28,9 +28,7 @@ const ResumeBox = (props) => {
                             )
                         })              
                                         :
-                        <div>
-                            <img alt = "me" className = "img-fluid" src = {loading}/>
-                        </div>
+                        <MainLoad />
                 }
             </div>
         </div>

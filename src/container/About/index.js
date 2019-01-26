@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-// image 
-import loading from '../../Images/loading.svg';
 // components 
 import ProfileInfo from './components/ProfileInfo';
+import { MainLoad } from './../../common/Loading';
 import ProfilePicture from './components/ProfilePicture';
 import { PrimaryButton } from '../../common/Buttons';
 import { SocialLinkList } from '../../common/SocialLink';
@@ -42,7 +41,7 @@ class About extends Component{
         let done = null;
 
         if(profile === null) {
-            done = <ProfilePicture src = {loading} />
+            done = <MainLoad />
          } else if(profile === 'error') {
             done = <div>Image Indisponible verifié votre connexion internet</div>
          } else {
