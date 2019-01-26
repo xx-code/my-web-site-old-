@@ -14,17 +14,21 @@ class NavBar extends Component{
     constructor(props){
         super(props)
         this.state = {
-            toggle : "none",
+            toggle : 'none',
             navValue : linkValue,
             isScroll : false
         }
     }
 
     componentDidMount(){
-        document.getElementById("homeTarget").classList.add("header-nav-active");
-        window.addEventListener("resize", this.navAjustement);
-        window.addEventListener("scroll", this.changeHeader);
-        window.addEventListener("scroll", this.changeOnScroll);
+        if(window.innerHeight >= 764){
+            this.setState({toggle : 'none'})
+            styles.headerNav.display = 'none'
+        }
+        document.getElementById('homeTarget').classList.add('header-nav-active');
+        window.addEventListener('resize', this.navAjustement);
+        window.addEventListener('scroll', this.changeHeader);
+        window.addEventListener('scroll', this.changeOnScroll);
     }
 
     changeHeader = () => {
@@ -40,23 +44,23 @@ class NavBar extends Component{
 
     navAjustement = () => {
         let currentScreen = window.innerWidth;
-        if(currentScreen > 793){
-            document.getElementById('nav').style.display = "flex";
+        if(currentScreen >= 793){
+            styles.headerNav.display = 'flex';
         }else{
-            document.getElementById('nav').style.display = "none";
+            styles.headerNav.display = 'none';
         }
     }
 
     toggleUp = () => {
         let currentScreen = window.innerWidth;
 
-        if(currentScreen <= 764){
-            if(this.state.toggle === "none"){
-                this.setState({toggle: "flex"});
-                document.getElementById('nav').style.display = "flex";
+        if(currentScreen <= 793){
+            if(this.state.toggle === 'none'){
+                this.setState({toggle: 'flex'});
+                styles.headerNav.display = 'flex';
             }else{
-                this.setState({toggle: "none"});
-                document.getElementById('nav').style.display = "none";
+                this.setState({toggle: 'none'});
+                styles.headerNav.display = 'none';
             }
         }  
     }
@@ -75,7 +79,7 @@ class NavBar extends Component{
     }
 
     changeOnScroll = () => {
-        const sections = document.querySelectorAll("section")
+        const sections = document.querySelectorAll('section')
         let index = sections.length;
         
         const {navValue} = this.state;
@@ -98,12 +102,13 @@ class NavBar extends Component{
 
         return(
             <div 
-                className = "navbar" 
-                style = {!isScroll ? styles.header : styles.headerScroll}>
+                
+                style = {!isScroll ? styles.header : [styles.header, styles.headerScroll]}>
                 <Logo 
                     logoName = "Auguste Tiemele"
                     isScroll = {isScroll}
                     toggleUp = {this.toggleUp}
+                    styleToggle = {styles.headerToggle}
                  />
                 <ul 
                     style = {styles.headerNav} 

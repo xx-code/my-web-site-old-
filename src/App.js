@@ -3,7 +3,7 @@ import './App.css';
 //import Home from './Components/Home/Home'
 import Home from './container/Home';
 import About from './container/About';
-import Service from './Components/MyService/Services';
+import Service from './container/Service';
 import Resume from './Components/Resume/Resume';
 import CallMe from './Components/Resume/CallMe';
 import Work from './Components/MyWork/Work';

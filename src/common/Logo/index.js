@@ -7,14 +7,15 @@ const Logo =  props => {
 
     const { logoName, 
             isScroll, 
-            toggleUp } = props
+            toggleUp,
+            styleToggle } = props
 
     return(
         <div style = { !isScroll ? style.headerLogo : style.headerLogoScroll}>
             <h1 style = {style.headerTitle}>
                 <div>{logoName}</div>
             </h1>
-            <div style = {style.headerToggle} onClick = {toggleUp} >
+            <div style = {styleToggle} onClick = {toggleUp} >
                 <i className="fas fa-bars"></i>
             </div>
         </div>

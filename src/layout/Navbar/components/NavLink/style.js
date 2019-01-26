@@ -7,7 +7,7 @@ export default {
     navTitle : {
         fontWeight: 600,
         padding: '10px',
-        margin: '0px 4px 0px 4px',
+        margin: 0,
         color: WHITE,
         '@media screen and (max-width: 792px)' : {
             color: SOOMTH_BLACK,
@@ -31,7 +31,7 @@ export default {
     navTitleScroll : {
         fontWeight: 600,
         padding: '10px',
-        margin: '0px 4px 0px 4px',
+        margin: 0,
         color: BlACK
     }
 }
