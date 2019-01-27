@@ -95,8 +95,9 @@ class SendMeMessage extends Component {
                         style = {style.btnMessage} 
                         className = "col-md-12">
                         <PrimaryButton
-                            title = "submit"
-                            onClick = {this.submit} 
+                            title = "SUBMIT"
+                            onClick = {this.submit}
+                            styleOptions = {{lineHeight: '40px'}} 
                         />
                     </div>
                 </div>

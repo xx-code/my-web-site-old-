@@ -84,7 +84,7 @@ class NavBar extends Component{
         
         const {navValue} = this.state;
 
-        while(--index && window.scrollY + 50 < sections[index].offsetTop) {}
+        while(--index && window.scrollY + 70 < sections[index].offsetTop) {}
 
         navValue.forEach(items => {
             items.isActive = false;

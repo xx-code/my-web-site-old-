@@ -11,7 +11,7 @@ import Radium from 'radium';
 const Services = props => {
     return(
         <section 
-            id = "service" 
+            name = "SERVICE"
             className = "container-fluid"
             style = {style.services} >
             <div>

@@ -60,7 +60,8 @@ class Home extends Component {
                     left = {leftImg}
                 /> 
                 <NavBar />
-                <section id = "home" 
+                <section 
+                        name = "HOME"
                         style = {{ ...styles.home, 
                                     height: imgHeight }}>
                     <div className = "container" 

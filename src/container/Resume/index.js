@@ -43,7 +43,7 @@ const  Resume = props => {
 
     return(
         <section 
-            id = "resume" 
+            name = "RESUME"
             className = "container-fluid"
             style = {styles.resume}>
             <BigTitle title = {{first: 'My', second: 'Resume'}} />

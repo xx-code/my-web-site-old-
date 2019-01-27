@@ -13,7 +13,8 @@ const Framework = props => {
         <div
             style = {style.frameWork} 
             className = "col-xs-6 col-sm-4">
-            <div style = {style.frameContent} >
+            <div 
+                style = {style.frameContent}>
                 <a 
                     href = {url} 
                     rel="noopener noreferrer" 

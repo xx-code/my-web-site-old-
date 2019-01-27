@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
-//import Home from './Components/Home/Home'
+// contenair & component
 import Home from './container/Home';
 import About from './container/About';
 import Service from './container/Service';
@@ -10,11 +9,15 @@ import Work from './container/Project';
 import Quotes from './container/Project/components/Quotes';
 import Contact from './container/Contact';
 import Footer from './layout/Footer';
-import Radium from 'radium';
+// redux & firebase
 import { Provider } from 'react-redux';
 import {store, rrfProps} from './store';
 import { ReactReduxFirebaseProvider } from 'react-redux-firebase';
+// data
 import { quotes } from './utils/StaticData';
+// style
+import './App.css';
+import Radium from 'radium';
 
 class App extends Component {
   render() {

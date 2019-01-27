@@ -1,4 +1,6 @@
 import React from 'react';
+// lib
+import { Link } from 'react-scroll';
 // style
 import Radium from 'radium';
 import style from './style';
@@ -6,22 +8,29 @@ import style from './style';
 const NavLink = props => {
 
     const { id, 
-            link, 
-            onClick, 
             title,
             isActive,
             isScroll } = props;
 
     return(
-        <li id = {id} style = {{
-            ...!isScroll ? style.navTitle : style.navTitleScroll,
-            ...isActive ? style.navActive : ''}}>
-            <a 
-                href = {link} 
-                onClick = {onClick}
+        <li id = {id} 
+            style = {{
+                ...!isScroll ? style.navTitle : style.navTitleScroll,
+                ...isActive ? style.navActive : ''}}>
+            <Link
+                to={title} 
+                spy={true} 
+                smooth={true} 
+                offset={-60} 
+                duration={500}
                 style = {style.navLink}>
-                {title}
-            </a>
+                <a 
+                    href = "#!"
+                    onClick = {event => event.preventDefault()}
+                    style = {style.navLink}>
+                    {title}
+                </a>
+            </Link>
         </li>
     )
 }

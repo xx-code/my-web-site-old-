@@ -7,7 +7,7 @@ export default {
     },
     inputForm : {
         border: 'none',
-        borderBottom: '2px solid #a2a2a2',
+        borderBottom: '1px solid #a2a2a2',
         ':focus' : {
             outline: 'none !important',
             borderColor: PRIMARY_COLOR
@@ -18,7 +18,7 @@ export default {
     },
     textArea : {
         width: '100%',
-        borderWidth: '2px',
+        borderWidth: '1px',
         ':focus' : {
             outline: 'none !important',
             borderColor: PRIMARY_COLOR

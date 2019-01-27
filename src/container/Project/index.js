@@ -30,7 +30,7 @@ const Work = props => {
 
     return(
         <section 
-            id = "my_work"
+            name = "MY WORK"
             style = {styles.myWork} 
             className = "container-fluid">
             <BigTitle title = {{first : 'My', second : 'portofolio'}} />

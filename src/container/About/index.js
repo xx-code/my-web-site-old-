@@ -59,7 +59,7 @@ class About extends Component{
 
         return(
             <section 
-                id = "about" 
+                name = "ABOUT" 
                 className = "container-fluid"
                 style = {styles.about}>
                 <div className = "container"> 
