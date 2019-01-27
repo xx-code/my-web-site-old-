@@ -1,6 +1,6 @@
 import React from 'react';
 // image
-import backImage from '../../../../Images/background.jpg';
+import backImage from '../../../../images/background.jpg';
 // style
 import styles from './styles';
 import Radium from 'radium';

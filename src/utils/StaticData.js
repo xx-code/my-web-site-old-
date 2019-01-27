@@ -1,6 +1,6 @@
-import voltaire from '../Images/voltaire.jpg';
-import socrate from '../Images/Socrate.jpg';
-import martin from '../Images/martin.jpg';
+import voltaire from '../images/voltaire.jpg';
+import socrate from '../images/Socrate.jpg';
+import martin from '../images/martin.jpg';
 
 const linkValue = [
     {
