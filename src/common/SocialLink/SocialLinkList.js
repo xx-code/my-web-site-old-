@@ -5,9 +5,9 @@ import SocialLink from './SocialLink'
 import Radium from 'radium';
 import style from './style';
 
-const SocialLinkList = ({socialLinks}) => {
+const SocialLinkList = ({socialLinks, anotherOption}) => {
     return(
-        <div>
+        <div style = {anotherOption}>
             <ul style = {style.socialLinkList} >
             {
                 socialLinks.map((socialLink) => {

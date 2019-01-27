@@ -9,7 +9,7 @@ import CallMe from './container/Resume/components/CallMe';
 import Work from './container/Project';
 import Quotes from './container/Project/components/Quotes';
 import Contact from './Components/Contact/Contact';
-import Footer from './Components/Footer/Footer';
+import Footer from './layout/Footer';
 import Radium from 'radium';
 import { Provider } from 'react-redux';
 import {store, rrfProps} from './store';
