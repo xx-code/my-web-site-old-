@@ -108,11 +108,37 @@ const quotes = [
     }
 ]
 
+const  Info = [
+    {
+        id : 0,
+        icon:"fas fa-map-marker-alt",
+        label: "Adress",
+        text1: "Abidjan Cocody,",
+        text2: "Angré Djibi 3"
+    },
+    {
+        id : 1,
+        icon:"fas fa-envelope",
+        label: "Email",
+        text1: "akaaugustejunior@gmail.com",
+        text2: "tiemele.a@valorisuniversity.com"
+    } ,
+    {
+        id : 2,
+        icon:"fas fa-phone",
+        label: "Phone",
+        text1: "+225 770 234 65",
+        text2: "+225 777 571 52"
+    }            
+]
+
+
 
 
 export {
     linkValue,
     socialLinks,
     services,
-    quotes
+    quotes,
+    Info
 }
