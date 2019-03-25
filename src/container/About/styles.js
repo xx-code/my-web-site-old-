@@ -9,12 +9,6 @@ export default {
     actionAbout : {
         display: 'flex',
         flexDirection: 'row',
-        '@media screen and (max-width: 991px)': {
-            padding: '0 20px',
-            lineHeight: '30px',
-            marginRight: '10px',
-            fontSize: '14px'
-        }
     },
     textAbout : {
         ' @media (max-width: 767px)':{
@@ -24,6 +18,12 @@ export default {
     actionAboutBtn : {
         padding: '0 40px',
         lineHeight: '40px',
-        marginRight: '10px'
+        marginRight: '10px',
+        '@media screen and (max-width: 991px)': {
+            padding: '0 15px',
+            lineHeight: '30px',
+            marginRight: '10px',
+            fontSize: '13px'
+        }
     }
 }

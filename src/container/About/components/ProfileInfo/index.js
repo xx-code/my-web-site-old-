@@ -6,11 +6,11 @@ const ProfileInfo = props => {
     return(
         <React.Fragment>
             <h2 style = {style.textH2} >ABOUT <span style = {style.textSpan} >ME</span></h2>
-            <p>Auguste Tiemele jeune développeur informatique, ayant des compétences en programmation web et android/IOS.
+            <p style = {style.paragraph}>Auguste Tiemele jeune développeur informatique, ayant des compétences en programmation web et android/IOS.
                 Il a aquis ses compétences durant son parcours universitaire et ces heures intensives de recherche.</p>
-            <p>En tant que développeur informatique lorsqu'il n'est pas devant son écran, il fait beaucoup de sport. 
+            <p style = {style.paragraph}>En tant que développeur informatique lorsqu'il n'est pas devant son écran, il fait beaucoup de sport. 
                 il aime la lecture, les jeux vidéos et les mangas.</p>
-            <p>Les techniques et language qu'il utilise sont : le javascript, reactjs, react native, firebase, SQL, noSQL et python</p>
+            <p style = {style.paragraph}>Les techniques et language qu'il utilise sont : le javascript, reactjs, react native, firebase, SQL, noSQL et python</p>
         </React.Fragment>
     )
 }

@@ -10,7 +10,7 @@ export default {
         textAlign: 'center',
         fontWeight: 600,
         letterSpacing: '1px',
-        fontSize: '16px',
+        fontSize: '14px',
         borderRadius: '100px',
         border: 'none',
         transition: 'all .2s ease',

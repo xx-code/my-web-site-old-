@@ -10,8 +10,8 @@ export default {
         borderRadius: '10px'
     },
     profile : {
-        width: '500px',
-        height: 'auto',
-        maxHeight: '400px'
+        width: '100%',
+        maxWidth: '400px',
+        height: 'auto'
     }
 }

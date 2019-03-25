@@ -24,7 +24,7 @@ export default {
         }
     },
     frameService : {
-        '@media screen and (max-width: 575px)' : {
+        '@media screen and (max-width: 768px)' : {
             marginBottom: '30px'
         }
     },

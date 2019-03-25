@@ -17,6 +17,10 @@ export default {
             bottom: '-10px'
         }
     },
+    paragraph: {
+        fontSize: '15px',
+        marginBottom: '8px',
+    },
     textSpan : {
         color : PRIMARY_COLOR
     },

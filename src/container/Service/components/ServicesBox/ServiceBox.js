@@ -9,7 +9,7 @@ const ServiceBox = (props) => {
             title } = props;
     return(
         <div 
-            className = "col-sm-4"
+            className = "col-md-4"
             style = {style.frameService}>
             <div style = {style.serviceBox} >
                 <div>
