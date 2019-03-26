@@ -32,6 +32,13 @@ const linkValue = [
         isScroll : false
     },
     {
+        id : 'skillTarget',
+        link : '#skill',
+        tilte : 'SKILLS',
+        isActive : false,
+        isScroll : false
+    },
+    {
         id : 'workTarget',
         link : '#my_work',
         tilte : 'MY WORK',

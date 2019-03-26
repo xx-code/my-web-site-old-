@@ -8,6 +8,7 @@ import CallMe from './container/Resume/components/CallMe';
 import Work from './container/Project';
 import Quotes from './container/Project/components/Quotes';
 import Contact from './container/Contact';
+import Skill from './container/Skill';
 import Footer from './layout/Footer';
 // redux & firebase
 import { Provider } from 'react-redux';
@@ -30,6 +31,7 @@ class App extends Component {
               <Service />
               <Resume />
               <CallMe />
+              <Skill />
               <Work />
               <Quotes quotes = {quotes}/>
               <Contact />
