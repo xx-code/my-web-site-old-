@@ -30,7 +30,7 @@ const Contact = props => {
             <div className = "container">
                 <div className = "row">
                     <Messages addNewContact = {addContact}/>
-                    <div className = "col-md-6 col-xs-12">
+                    <div className = "col-md-6 col-xs-12" style = {styles.contactList}>
                         <ContactList contacts = {Info}/>
                     </div>
                 </div>

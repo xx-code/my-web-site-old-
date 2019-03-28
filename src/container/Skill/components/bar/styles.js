@@ -3,6 +3,7 @@ import { WHITE,
 
 export default {
     bar: {
+        marginTop: 5
     },
     skill: {    
         fontSize: '18px',
