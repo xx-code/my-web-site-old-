@@ -3,17 +3,41 @@ import { WHITE,
 
 export default {
     frameWork : {
-        width: '33%'
+        margin: '0px 8px 0px 8px'
     },
-    frameContent : {
-        padding: '2px',
+    title: {
+        textAlign: 'center'
+    },
+    linkFrame: {
         position: 'relative',
-        backgroundColor: WHITE,
-        overflow: 'hidden',
-        boxShadow: 'rgba(58,78,95,0.2) 0 10px 16px, rgba(58,78,95,0.05) 0 -5px 16px',
-        marginBottom: '30px',
-        borderColor : PRIMARY_COLOR,
-        borderWidth : '3px'
+        maxWidth: '100%',
+        height: 'auto',
+        boxShadow: 'rgba(58, 78, 95, 0.2) 0px 10px 16px, rgba(58, 78, 95, 0.05) 0px -5px 16px',
+        borderRadius: '10px',
+        ':hover #frame': {
+            visibility: 'visible'
+        } 
+    },
+    frameImage: {
+        borderRadius: '10px'
+    },
+    background: {
+        backgroundColor: 'rgba(0, 0, 0, 0.6)',
+        width: '100%',
+        borderRadius: '10px',
+        height: '100%',
+        position: 'absolute',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: '20px',
+        visibility: 'hidden',
+        borderWidth: '2px'
+    },
+    link: {
+        fontSize: '16px',
+        color: 'white',
+        textDecoration: 'none'
     },
     aboutInfo : {
         position: 'absolute',

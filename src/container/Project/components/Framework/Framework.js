@@ -2,33 +2,44 @@ import React from 'react';
 import style from './style'
 import Radium from 'radium';
 
+const mouseEnter = id => {
+    document.querySelector(`.${id}`).style.visibility = 'visible'
+}
+const mouseLeave = id => {
+    document.querySelector(`.${id}`).style.visibility = 'hidden'
+}
+
 const Framework = props => {
 
     const { url,
             img,
             name,
-            type } = props;
+            id } = props;
 
     return(
         <div
             style = {style.frameWork} 
-            className = "col-xs-6 col-sm-4">
-            <div 
-                style = {style.frameContent}>
-                <a 
-                    href = {url} 
-                    rel="noopener noreferrer" 
-                    target = "_blank">
-                    <img
-                        style = {style.frameContentImg} 
-                        src = {img} 
-                        alt = "work"/>
-                    <div  style = {style.aboutInfo}>
-                        <h4 style = {style.aboutInfoTitle}>{name}</h4>
-                        <label style = {style.aboutInfoLabel}>{type}</label>
+            className = "col-sm-12 col-md-4">
+                <h3 style = {style.title}>{name}</h3>
+                <div style = {style.linkFrame} 
+                    onMouseEnter = {() => mouseEnter(`img${id}`)}
+                    onMouseLeave = {() => mouseLeave(`img${id}`)}>
+                    <div className = {`img${id} img-fluid`} style = {style.background} >
+                        <a 
+                            style = {style.link}
+                            href = {url} 
+                            rel="noopener noreferrer" 
+                            target = "_blank">
+                            {`Allez sur: ${url}`}
+                        </a>
                     </div>
-                </a>
-            </div> 
+                    <img
+                        className = "img-fluid"
+                        style = {style.frameImage}
+                        src = {img}
+                        alt = {name}
+                    />
+                </div>
         </div>
     )
 }

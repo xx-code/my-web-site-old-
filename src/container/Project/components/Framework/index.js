@@ -8,7 +8,8 @@ const FrameworkList = ({projects}) => {
         {
             projects.map((element) => {
                 return (
-                    <FrameWork 
+                    <FrameWork
+                        key = {element.id}
                         id = {element.id} 
                         url = {element.url}
                         img = {element.img}

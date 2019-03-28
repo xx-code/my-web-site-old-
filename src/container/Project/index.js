@@ -35,7 +35,7 @@ const Work = props => {
             className = "container-fluid">
             <BigTitle title = {{first : 'My', second : 'portofolio'}} />
             <div className = "container">
-                <div className = "row">
+                <div className = "row d-flex justify-content-center">
                     {
                         content
                     }
