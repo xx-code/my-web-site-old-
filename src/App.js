@@ -1,42 +1,23 @@
 import React, { Component } from 'react';
-// contenair & component
-import Home from './container/Home';
-import About from './container/About';
-import Service from './container/Service';
-import Resume from './container/Resume';
-import CallMe from './container/Resume/components/CallMe';
-import Work from './container/Project';
-import Quotes from './container/Project/components/Quotes';
-import Contact from './container/Contact';
-import Skill from './container/Skill';
-import Footer from './layout/Footer';
+import Main from './Main';
+import ViewProject from './container/ViewProject';
 // redux & firebase
 import { Provider } from 'react-redux';
 import {store, rrfProps} from './store';
 import { ReactReduxFirebaseProvider } from 'react-redux-firebase';
-// data
-import { quotes } from './utils/StaticData';
 // style
 import './App.css';
-import Radium from 'radium';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 class App extends Component {
   render() {
     return (
       <Provider store = {store}>
           <ReactReduxFirebaseProvider {...rrfProps}>
-            <Radium.StyleRoot>
-              <Home />
-              <About />
-              <Service />
-              <Resume />
-              <CallMe />
-              <Skill />
-              <Work />
-              <Quotes quotes = {quotes}/>
-              <Contact />
-              <Footer />
-            </Radium.StyleRoot>
+          <Router>
+              <Route exact path = "/" component = {Main} />
+              <Route exact path = "/:id" component = {ViewProject}/>
+          </Router>
           </ReactReduxFirebaseProvider>            
       </Provider>
     );

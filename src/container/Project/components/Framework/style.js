@@ -30,14 +30,27 @@ export default {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
+        flexDirection: 'column',
         padding: '20px',
         visibility: 'hidden',
         borderWidth: '2px'
     },
+    icon: {
+        fontSize: 60,
+        color: '#fff'
+    },
     link: {
-        fontSize: '16px',
+        fontSize: '18px',
         color: 'white',
+        fontStyle: 'bold',
+        marginTop: '5px',
         textDecoration: 'none'
+    },
+    openIcon: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'column'
     },
     aboutInfo : {
         position: 'absolute',

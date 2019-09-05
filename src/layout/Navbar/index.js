@@ -8,6 +8,7 @@ import { linkValue } from '../../utils/StaticData';
 // style
 import styles from './styles';
 import Radium from 'radium';
+import { isEmpty } from 'react-redux-firebase';
 
 class NavBar extends Component{
 
@@ -84,7 +85,7 @@ class NavBar extends Component{
         
         const {navValue} = this.state;
 
-        while(--index && window.scrollY + 70 < sections[index].offsetTop) {}
+        if (!isEmpty(sections)) while(--index && window.scrollY + 70 < sections[index].offsetTop) {}
 
         navValue.forEach(items => {
             items.isActive = false;

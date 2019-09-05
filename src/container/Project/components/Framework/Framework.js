@@ -1,6 +1,7 @@
 import React from 'react';
 import style from './style'
 import Radium from 'radium';
+import { Link } from 'react-router-dom';
 
 const mouseEnter = id => {
     document.querySelector(`.${id}`).style.visibility = 'visible'
@@ -25,13 +26,14 @@ const Framework = props => {
                     onMouseEnter = {() => mouseEnter(`img${id}`)}
                     onMouseLeave = {() => mouseLeave(`img${id}`)}>
                     <div className = {`img${id} img-fluid`} style = {style.background} >
-                        <a 
-                            style = {style.link}
-                            href = {url} 
-                            rel="noopener noreferrer" 
-                            target = "_blank">
-                            {`Allez sur: ${url}`}
-                        </a>
+                        <Link to = {`/${id}`}>
+                            <div style = {style.openIcon}>
+                                <i className = "fas fa-door-open" style = {style.icon}></i>
+                                <h3 style = {style.link}>
+                                    Voir plus d'infos
+                                </h3>
+                            </div>
+                        </Link>
                     </div>
                     <img
                         className = "img-fluid"
