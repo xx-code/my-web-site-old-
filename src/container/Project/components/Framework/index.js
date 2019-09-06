@@ -12,7 +12,7 @@ const FrameworkList = ({projects}) => {
                         key = {element.id}
                         id = {element.id} 
                         url = {element.url}
-                        img = {element.img}
+                        img = {element.overview}
                         name = {element.name}
                         type = {element.type}
                     />
