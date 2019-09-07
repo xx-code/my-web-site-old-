@@ -12,8 +12,7 @@ const mouseLeave = id => {
 
 const Framework = props => {
 
-    const { url,
-            img,
+    const { img,
             name,
             id } = props;
 

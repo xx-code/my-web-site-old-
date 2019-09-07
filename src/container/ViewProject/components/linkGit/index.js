@@ -1,6 +1,5 @@
 import React from 'react';
 import style from './style';
-import img from '../../../../Images/web.jpg';
 import Radium from "radium";
 import {isEmpty} from "react-redux-firebase";
 
@@ -13,6 +12,7 @@ const LinkGit = props => {
                 href={href}
                 style={[style.link, customStyle]}
                 target="_blank"
+                rel="noopener noreferrer"
                 >
                 <h3 style={style.linkTitle}>Lien Github</h3>
                 {
