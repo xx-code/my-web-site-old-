@@ -13,6 +13,7 @@ const LinkProject = props => {
             href={href}
             style={[style.link, customStyle]}
             target="_blank"
+            rel="noopener noreferrer"
         >
             <img
                 alt = "link"

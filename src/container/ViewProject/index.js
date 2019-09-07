@@ -5,35 +5,38 @@ import DetailProject from './components/detailProject';
 import PreviewProject from './components/previewProject';
 import LinkProject from './components/linkProject';
 import LinkGit from './components/linkGit';
-import iconTemp from '../../utils/iconTemp.png';
-import frameAndroid from '../../Images/androidFrame.jpg';
+import PageLoading from '../../common/PageLoading';
 import LinkAppStore from '../../Images/appstore.jpg';
 import LinkPlayStore from '../../Images/playstore.jpg';
+import LinkWeb from '../../Images/web.jpg'
 import Radium from 'radium';
 import firebase from 'firebase'
-import {compose} from "redux";
-import {firestoreConnect, isEmpty, isLoaded} from "react-redux-firebase";
-import {connect} from "react-redux";
-import {MainLoad} from "../../common/Loading";
 
 class ViewProject extends Component {
 
     state = {
         project: {
-            presentations: []
-        }
+            presentations: [],
+        },
+        loading: true
     }
 
     componentDidMount() {
+        setTimeout(this.getProject, 3000)
+    }
+
+    getProject = () => {
         firebase.firestore().collection('Project').doc(this.props.match.params.id).onSnapshot( doc => {
-            this.setState({project: doc.data()})
-            console.log(doc.data())
+            this.setState({project: doc.data(), loading: false})
         })
     }
 
-    render(){
-        const { project } = this.state;
 
+    renderLoadingPage = () =>{
+        return <PageLoading />;
+    }
+
+    renderProject = (project) => {
         return(
             <Radium.StyleRoot>
                 <NavBar/>
@@ -46,17 +49,28 @@ class ViewProject extends Component {
                                 title = {project.name}
                             />
                             <div style = {style.containerLink} >
-                                <LinkProject
-                                    index = {1}
-                                    customStyle = {{marginRight: '10px'}}
-                                    linkImg = {LinkPlayStore}
-                                    href = {"lien app soto"}
-                                />
-                                <LinkProject
-                                    index = {2}
-                                    linkImg = {LinkAppStore}
-                                    href = {null}
-                                />
+                                {
+                                    project.type === 'web' ? <LinkProject
+                                                                index = {1}
+                                                                linkImg = {LinkWeb}
+                                                                href = {project.urlPlayStore}
+                                                            />
+                                                           :
+                                                            <React.Fragment>
+                                                                <LinkProject
+                                                                    index = {1}
+                                                                    customStyle = {{marginRight: '10px'}}
+                                                                    linkImg = {LinkPlayStore}
+                                                                    href = {project.urlPlayStore}
+                                                                />
+                                                                <LinkProject
+                                                                    index = {2}
+                                                                    linkImg = {LinkAppStore}
+                                                                    href = {project.urlAppStore}
+                                                                />
+                                                            </React.Fragment>
+
+                                }
                             </div>
                             <div style={style.containerGit}>
                                 <LinkGit
@@ -66,7 +80,7 @@ class ViewProject extends Component {
                         </div>
                         <div className = "col-md-12 col-lg-6" >
                             <PreviewProject
-                                plateform = "app"
+                                plateform = {project.type}
                                 images = {project.presentations}
                             />
                         </div>
@@ -74,6 +88,16 @@ class ViewProject extends Component {
                 </div>
             </Radium.StyleRoot>
         )
+    }
+
+    render(){
+        const { project, loading } = this.state;
+
+        if(loading) {
+            return this.renderLoadingPage()
+        } else {
+            return this.renderProject(project)
+        }
     }
 }
 

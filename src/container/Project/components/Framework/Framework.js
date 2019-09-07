@@ -2,6 +2,7 @@ import React from 'react';
 import style from './style'
 import Radium from 'radium';
 import { Link } from 'react-router-dom';
+import '../../../../App.css';
 
 const mouseEnter = id => {
     document.querySelector(`.${id}`).style.visibility = 'visible'
@@ -25,7 +26,7 @@ const Framework = props => {
                     onMouseEnter = {() => mouseEnter(`img${id}`)}
                     onMouseLeave = {() => mouseLeave(`img${id}`)}>
                     <div className = {`img${id} img-fluid`} style = {style.background} >
-                        <Link to = {`/${id}`}>
+                        <Link to = {`/${id}`} className = "link">
                             <div style = {style.openIcon}>
                                 <i className = "fas fa-door-open" style = {style.icon}></i>
                                 <h3 style = {style.link}>

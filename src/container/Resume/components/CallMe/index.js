@@ -17,7 +17,7 @@ const CallMe = props => {
                 <a 
                     style = {style.btnWhite}
                     rel="noopener noreferrer"  
-                    href = "https://www.malt.fr/profile/augustetiemele" 
+                    href = "https://www.fr.freelancer.com/u/rionuj"
                     target = "_blank">
                     TRAVAILLONS ENSEMBLE
                 </a>

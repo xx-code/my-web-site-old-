@@ -1,8 +1,5 @@
 import React from 'react';
 import style from './style';
-import frameIphone from '../../../../Images/iphoneFrame.jpg';
-import framePc from '../../../../Images/pcFrame.jpg'
-import home from '../../../../utils/home.png';
 import Radium from "radium";
 
 const PreviewProject = props => {
@@ -18,6 +15,7 @@ const PreviewProject = props => {
                             key = {index}
                             style = {plateform === 'web' ? {} : style.firstPresent}>
                             <img
+                                alt = "presentation"
                                 src = {item}
                                 style = {style.img}
                             />

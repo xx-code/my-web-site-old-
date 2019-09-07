@@ -45,3 +45,6 @@ root{
   margin: 0;
 }
 
+.link:hover {
+  text-decoration: none;
+}

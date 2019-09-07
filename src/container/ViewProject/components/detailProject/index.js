@@ -16,6 +16,7 @@ const DetailProject = props => {
         <div>
             <div style={style.titleContainer}>
                 <img
+                    alt = "logo"
                     src = {icon}
                     style = {style.icon}
                 />

@@ -69,7 +69,9 @@ class Home extends Component {
                         <div style = {styles.textAbout}>
                             <Title />
                             <div style = {styles.wtAction}>
-                                <PrimaryButton title = "LET'S TALK NEW" />
+                                <PrimaryButton
+                                    title = "LET'S TALK NEW"
+                                />
                             </div>
                         </div>
                     </div>
